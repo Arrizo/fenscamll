@@ -1,0 +1,56 @@
+
+ @mixin trigon($toppx,$leftpx,$z_index,$border_width){
+    top:$toppx;
+    left: $leftpx;
+    z-index: $z_index;
+    border-width:$border_width;
+   
+}
+@mixin trigon_color($topcolor,$right,$bottom,$left){
+     border-color:$topcolor $right $bottom $left;
+}
+
+
+
+
+    .back_color{
+       @include trigon(0px,0px,10,11px);
+       @include trigon_color(#fff, transparent,transparent,#fff); 
+             }
+    .prevent_design{
+          @include trigon(3px,3px,12,8px);
+    }         
+   .prevent_color1{   
+      @include trigon_color(#d00515, transparent,transparent,#d00515); 
+   }
+   .prevent_color2{
+      @include trigon_color(#2782cc,transparent,transparent,#2782cc);
+   }
+   .prevent_color3{
+    @include trigon_color(#bde9ae,transparent,transparent,#bde9ae);
+   }
+   .prevent_color4{
+    @include trigon_color(#e49433,transparent,transparent,#e49433);
+   }
+   .prevent_color5{
+    @include trigon_color(#337e8d,transparent,transparent,#337e8d);
+   }
+   .prevent_color6{
+    @include trigon_color(#e85629,transparent,transparent,#e85629);
+   }
+   .prevent_color7{
+    @include trigon_color(#cd375e,transparent,transparent,#cd375e);
+   }
+   .prevent_color8{
+    @include trigon_color(#925937,transparent,transparent,#925937);
+   }
+   .prevent_color9{
+    @include trigon_color(#0f51bd,transparent,transparent,#0f51bd);
+   }
+
+   .prevent_color10{
+    @include trigon_color(#e85629,transparent,transparent,#e85629);
+   }
+   .prevent_color11{
+    @include trigon_color(#299b9a,transparent,transparent,#299b9a);
+   }

@@ -1,0 +1,185 @@
+ @mixin linear_gradients($orientation,$form_color,$to_color){
+    background:-webkit-linear-gradient($orientation,$form_color,$to_color);
+    background:-moz-linear-gradient($orientation,$form_color,$to_color);
+    background:linear-gradient($orientation,$form_color,$to_color);
+    background:-ms-linear-gradient($orientation,$form_color,$to_color);
+
+};
+
+
+.back_color_F2{
+        background: #72caf2; 
+}
+.back_color_F3{
+    background: #bde9ae;
+}
+.back_color_F4{
+   background: #f2d884;
+}
+.back_color_F5{
+    background: #5de9f6;
+}
+.back_color_F6{
+   background:#ff9505;
+}
+.back_color_F7{
+background:#ffd0e8;
+}
+.back_color_F8{
+    background: #febb9e;
+}
+.back_color_F9{
+    background:#1e5dc6;
+}
+.back_color_F10{
+    background:#fc5a58;
+}
+.back_color_F11{
+    background:#3aaba9;
+}
+ .bg_F1{
+          @include linear_gradients(left,#e01222,#d00515);
+          // filter:progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#e01222,endColorStr=#d00515);
+    }
+    .bg_F2{
+        @include linear_gradients(left,#34aee1,#2782cc);
+         //filter:progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#34aee1,endColorStr=#2782cc);
+    }
+    .bg_F3{
+        background:url(../image/F3/2.jpg);
+    }
+    
+    .bg_F4{
+        @include linear_gradients(left,#eeb924,#e49433); 
+    }
+    .bg_F5{
+     
+         @include linear_gradients(left,#488bad,#337e8d);
+     }
+     .bg_F6{
+        @include linear_gradients(left,#e16c46,#e85629);
+     }
+     .bg_F7{
+        @include linear_gradients(left,#e45672,#cd375e);
+     }
+     .bg_F8{
+        @include linear_gradients(left,#a56741,#925937);
+     }
+     .bg_F9{
+        @include linear_gradients(left,#336dcc,#0f51bd);
+     }
+     .bg_F10{
+        @include linear_gradients(left,#e16c46,#e85629);
+     }
+     .bg_F11{
+        @include linear_gradients(left,#3aaba9,#299b9a);
+     }
+     .gray{
+        position: fixed;
+        z-index: 200;
+        width: 100%;
+        height: 100%;
+        display: none;
+        background: rgba(0,0,0,.6);
+        
+     }
+     .logo_page{
+         position:fixed;
+         left: 40%;
+         top: 15%;
+         width: 360px;
+         padding:15px 20px;
+         display: none;
+          background: #fff;
+          height: 400px;
+         z-index: 500;
+      
+         p{
+            position:relative;
+            padding-bottom:11px;
+            border-bottom: 1px solid #d0d6d9;
+           span{
+            font-size: 17px;
+             color: #787d82;
+                }
+                i{  
+                    display: inline-block;
+                    width: 25px;
+                    height: 25px;
+                    position:absolute;
+                    right: 0px;
+                    top: -5px;
+                    cursor: pointer;
+                    text-align: center;
+                    line-height: 20px;
+                    color: #d0d6d9;
+                    font-size:35px;
+                    &:hover{
+                        color: #222;
+                    }
+                }
+         }
+         ul {
+
+            li{
+                position: relative;
+                margin:20px 10px;               
+                overflow: hidden;
+                input{  
+                         line-height: 17px;
+                         width: 100%;
+                          box-sizing:border-box;
+                        border:1px solid #b3b2b2;
+                        padding: 10px 0px 10px 75px;
+                }
+                .infomation{
+                    float: left;
+                    width: 180px;
+                    border-right:0px;
+                }
+                .info_logo{
+                    float: left;
+                    width: 120px;
+                     border-left:0px;
+                    background:#ec584e;
+                    color: #fff;
+                   padding-left:0px;
+                }
+                .invitation_code{
+                    width: 140px;
+                    padding-left:15px;
+                    margin-right: 20px;
+                }
+                .invite{
+                    position:absolute;
+                    padding-top:10px;
+                    display: inline-block;
+                    //overflow: hidden;
+                    font-size: 15px;
+
+                    section{
+                        position:relative; 
+                        top:-199px;                      
+                        width: 200px;
+                        height: 100px;
+                        padding:5px;
+                        background: blue;
+                    }
+                }
+                .logo_button{
+                   background:#ec584e;
+                   padding:15px 0px;
+                    color:#fff;
+                    font-size: 15px;
+                }
+                label{
+                   position:absolute;
+                    top: 9px;
+                     left: 10px;
+                    color: #333;
+                    font-size: 14px;
+                }
+            }
+         }
+        
+     }

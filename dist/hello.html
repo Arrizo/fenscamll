@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
+<body>
+    <!-- <div id="app"> -->
+      <!--  <div v-html="message"></div> -->
+  <!--     <p v-if="seen">能看到我啊</p>
+      <div v-if="ok">
+          <h1>dsfsd</h1>
+          <p>dfsd</p>
+          <p>dfsdfsdf</p>
+      </div>
+    </div>
+
+<div v-if="Math.random()>0.5">
+dfsdfd</div>
+<div v-else=></div> -->
+
+
+<h2>字符串转换为函数</h2>
+
+<p id="demo"></p>
+
+<script>
+
+var text = '{ "name":"Runoob", "alexa":"function () {return 10000;}", "site":"www.runoob.com"}';
+var obj = JSON.parse(text);
+obj.alexa = eval("(" + obj.alexa + ")");
+
+document.getElementById("demo").innerHTML = obj.name + " Alexa 排名：" + obj.alexa(); 
+
+
+  // new Vue({
+    //     el:'#app',
+    //     data:{
+    //         seen:'true',
+    //         ok:'true'
+    //     }
+    // })
+</script>
+
+</body>
+</html>
